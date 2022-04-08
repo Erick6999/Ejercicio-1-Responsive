@@ -64,4 +64,28 @@ img{
 .container{
     display: grid;
 }
+@media  screen and (min-width: 40em){
+.columns-2{
+    flex-direction: row;
+}
+.columns-2 >*{
+    flex-basis: 100%;
+}
+.columns-2 > * + *{
+    margin-left: 2em;
+}
+}
+header,section{
+    padding: 4rem 0;
+    @media screen (min-width:40em){
+        header, 
+        section {
+            padding: 7rem 0;    
+        }
+    }
+
+    }
+
 /*tamaño de todo menos h1, 21 px
+posiciones de imagen son 9
+ 
